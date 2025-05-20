@@ -116,19 +116,19 @@ function Chatbot() {
                     <Chat />
                   </button>
                 </li>
-                <a href="https://www.devpandas.co/services" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.osbornerincon.com/services" target="_blank" rel="noopener noreferrer">
                   <li>
                     🎓 Services
                     <Services />
                   </li>
                 </a>
-                <a href="https://www.devpandas.co/resources" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.osbornerincon.com/business-resources-1" target="_blank" rel="noopener noreferrer">
                   <li>
                     🎉 Resources
                     <Resources />
                   </li>
                 </a>
-                <a href="https://www.devpandas.co/contact" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.osbornerincon.com/contact" target="_blank" rel="noopener noreferrer">
                   <li>
                     💬 Contact us
                     <Contact />
