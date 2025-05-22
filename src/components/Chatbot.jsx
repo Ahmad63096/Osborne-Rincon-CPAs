@@ -79,7 +79,7 @@ function Chatbot() {
                   <i className="fa-solid fa-ellipsis"></i>
                 </span>
               </div>
-              <span className="title">Osborne Rincon CPAs</span>
+              <span className="title">Grow Rich Capital</span>
               <i onClick={togglePopup} className="fa fa-times" aria-hidden="true" style={{ fontSize: '30px' }}></i>
             </div>
           ) : (
@@ -107,7 +107,7 @@ function Chatbot() {
                     <img src={sendicon} alt="Send Icon" />
                     <span className="online-icon"></span>
                     <span>
-                      <p>Osborne Rincon CPAs</p>
+                      <p>Grow Rich Capital</p>
                       <p>Hello there!</p>
                     </span>
                   </div>

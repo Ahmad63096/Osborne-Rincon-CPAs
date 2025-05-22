@@ -183,7 +183,7 @@ function Message() {
       try {
         const greeting = await fetchControlPanelSettings('qubit_devpandas');
         console.log("greeting data: ", greeting.data.settings.greeting_message);
-        const data = "Hey there! I’m your virtual assistant at Osborne Rincon CPAs. How are you today?😊";
+        const data = "Hey there! I’m your virtual assistant at Grow Rich Capital. How are you today?😊";
         const greetingMessage = {
           sender: "bot",
           text: data,
