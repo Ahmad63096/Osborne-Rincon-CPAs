@@ -129,13 +129,12 @@ function Message() {
                 timestamp: getTimestamp(),
                 id: getUniqueMessageId(),
                 buttons: [
-                  "Income Tax Preparation",
-                  "Tax Planning",
-                  "Bookkeeping and Accounting",
-                  "Estate Planning",
-                  "Business Consulting",
-                  "Business Valuation",
-                  "Fraud Prevention and Forensic Accounting"
+                  "Passive Real Estate Investment",
+                  "Real Estate Syndication",
+                  "Value-Add Property Investments",
+                  "Asset Management",
+                  "Capital Raising",
+                  "Investor Relations"
                 ],
               };
               setMessages((prevMessages) => [...prevMessages, buttonMessage]);
@@ -155,13 +154,12 @@ function Message() {
     resetTimers();
     startInactivityTimer();
     const buttonResponses = {
-      "Income Tax Preparation": "I want to know about Income Tax Preparation.",
-      "Tax Planning": "I want to know about Tax Planning.",
-      "Bookkeeping and Accounting": "I want to know about Bookkeeping and Accounting.",
-      "Estate Planning": "I want to know about Estate Planning.",
-      "Business Consulting": "I want to know about Business Consulting.",
-      "Business Valuation": "I want to know about Business Valuation.",
-      "Fraud Prevention and Forensic Accounting": "I want to know about Fraud Prevention and Forensic Accounting."
+      "Passive Real Estate Investment": "I want to know about Passive Real Estate Investment.",
+      "Real Estate Syndication": "I want to know about Real Estate Syndication.",
+      "Value-Add Property Investments": "I want to know about Value-Add Property Investments.",
+      "Asset Management": "I want to know about Asset Management.",
+      "Capital Raising": "I want to know about Capital Raising.",
+      "Investor Relations": "I want to know about Investor Relations."
     };
     const responseMessage = buttonResponses[buttonText] || "Sorry, I didn't understand that.";
     sendMessage(responseMessage);
