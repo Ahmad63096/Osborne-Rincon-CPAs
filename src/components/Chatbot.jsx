@@ -79,7 +79,7 @@ function Chatbot() {
                   <i className="fa-solid fa-ellipsis"></i>
                 </span>
               </div>
-              <span className="title">Grow Rich Capital</span>
+              <span className="title">LCN Capital Partners</span>
               <i onClick={togglePopup} className="fa fa-times" aria-hidden="true" style={{ fontSize: '30px' }}></i>
             </div>
           ) : (
@@ -107,7 +107,7 @@ function Chatbot() {
                     <img src={sendicon} alt="Send Icon" />
                     <span className="online-icon"></span>
                     <span>
-                      <p>Grow Rich Capital</p>
+                      <p>LCN Capital Partners</p>
                       <p>Hello there!</p>
                     </span>
                   </div>
@@ -116,19 +116,19 @@ function Chatbot() {
                     <Chat />
                   </button>
                 </li>
-                <a href="https://growrichcapital.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.lcnpartners.com/" target="_blank" rel="noopener noreferrer">
                   <li>
                     🎓 Services
                     <Services />
                   </li>
                 </a>
-                <a href="https://growrichcapital.com/portfolio/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.lcnpartners.com/portfolio/" target="_blank" rel="noopener noreferrer">
                   <li>
                     🎉 Resources
                     <Resources />
                   </li>
                 </a>
-                <a href="https://growrichcapital.com/contact-us/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.lcnpartners.com/contact/" target="_blank" rel="noopener noreferrer">
                   <li>
                     💬 Contact us
                     <Contact />

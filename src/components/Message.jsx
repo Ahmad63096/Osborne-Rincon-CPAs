@@ -129,12 +129,14 @@ function Message() {
                 timestamp: getTimestamp(),
                 id: getUniqueMessageId(),
                 buttons: [
-                  "Passive Real Estate Investment",
-                  "Real Estate Syndication",
-                  "Value-Add Property Investments",
-                  "Asset Management",
-                  "Capital Raising",
-                  "Investor Relations"
+                  "Sale-Leaseback Transactions",
+                  "Build-to-Suit Developments",
+                  "Long-Term Net Lease Structuring",
+                  "Corporate Real Estate Monetization",
+                  "Credit-Based Real Estate Investment",
+                  "Cross-Border Transaction Execution",
+                  "Customized Capital Solutions for Corporates",
+                  "Operationally Critical Property Investments"
                 ],
               };
               setMessages((prevMessages) => [...prevMessages, buttonMessage]);
@@ -154,12 +156,14 @@ function Message() {
     resetTimers();
     startInactivityTimer();
     const buttonResponses = {
-      "Passive Real Estate Investment": "I want to know about Passive Real Estate Investment.",
-      "Real Estate Syndication": "I want to know about Real Estate Syndication.",
-      "Value-Add Property Investments": "I want to know about Value-Add Property Investments.",
-      "Asset Management": "I want to know about Asset Management.",
-      "Capital Raising": "I want to know about Capital Raising.",
-      "Investor Relations": "I want to know about Investor Relations."
+      "Sale-Leaseback Transactions": "I want to know about Sale-Leaseback Transactions.",
+      "Build-to-Suit Developments": "I want to know about Build-to-Suit Developments.",
+      "Long-Term Net Lease Structuring": "I want to know about Long-Term Net Lease Structuring.",
+      "Corporate Real Estate Monetization": "I want to know about Corporate Real Estate Monetization.",
+      "Credit-Based Real Estate Investment": "I want to know about Credit-Based Real Estate Investment.",
+      "Cross-Border Transaction Execution": "I want to know about Cross-Border Transaction Execution.",
+      "Customized Capital Solutions for Corporates": "I want to know about Customized Capital Solutions for Corporates.",
+      "Operationally Critical Property Investments": "I want to know about Operationally Critical Property Investments."
     };
     const responseMessage = buttonResponses[buttonText] || "Sorry, I didn't understand that.";
     sendMessage(responseMessage);
@@ -181,7 +185,7 @@ function Message() {
       try {
         const greeting = await fetchControlPanelSettings('qubit_devpandas');
         console.log("greeting data: ", greeting.data.settings.greeting_message);
-        const data = "Hey there! I’m your virtual assistant at Grow Rich Capital. How are you today?😊";
+        const data = "Hey there! I’m your virtual assistant at LCN Capital Partners. How are you today?😊";
         const greetingMessage = {
           sender: "bot",
           text: data,
