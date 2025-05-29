@@ -79,7 +79,7 @@ function Chatbot() {
                   <i className="fa-solid fa-ellipsis"></i>
                 </span>
               </div>
-              <span className="title">STREAM Capital Partners</span>
+              <span className="title" style={{fontSize:'13px'}}>STREAM Capital Partners</span>
               <i onClick={togglePopup} className="fa fa-times" aria-hidden="true" style={{ fontSize: '30px' }}></i>
             </div>
           ) : (
