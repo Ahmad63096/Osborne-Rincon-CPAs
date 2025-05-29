@@ -129,14 +129,10 @@ function Message() {
                 timestamp: getTimestamp(),
                 id: getUniqueMessageId(),
                 buttons: [
-                  "Sale-Leaseback Transactions",
-                  "Build-to-Suit Developments",
-                  "Long-Term Net Lease Structuring",
-                  "Corporate Real Estate Monetization",
-                  "Credit-Based Real Estate Investment",
-                  "Cross-Border Transaction Execution",
-                  "Customized Capital Solutions for Corporates",
-                  "Operationally Critical Property Investments"
+                  "Investment Sales",
+                  "Sale Leaseback Advisory",
+                  "M&A Advisory",
+                  "Build-to-Suit Financing"
                 ],
               };
               setMessages((prevMessages) => [...prevMessages, buttonMessage]);
@@ -156,14 +152,10 @@ function Message() {
     resetTimers();
     startInactivityTimer();
     const buttonResponses = {
-      "Sale-Leaseback Transactions": "I want to know about Sale-Leaseback Transactions.",
-      "Build-to-Suit Developments": "I want to know about Build-to-Suit Developments.",
-      "Long-Term Net Lease Structuring": "I want to know about Long-Term Net Lease Structuring.",
-      "Corporate Real Estate Monetization": "I want to know about Corporate Real Estate Monetization.",
-      "Credit-Based Real Estate Investment": "I want to know about Credit-Based Real Estate Investment.",
-      "Cross-Border Transaction Execution": "I want to know about Cross-Border Transaction Execution.",
-      "Customized Capital Solutions for Corporates": "I want to know about Customized Capital Solutions for Corporates.",
-      "Operationally Critical Property Investments": "I want to know about Operationally Critical Property Investments."
+      "Investment Sales": "I want to know about Investment Sales.",
+      "Sale Leaseback Advisory": "I want to know about Sale Leaseback Advisory.",
+      "M&A Advisory": "I want to know about M&A Advisory.",
+      "Build-to-Suit Financing": "I want to know about Build-to-Suit Financing."
     };
     const responseMessage = buttonResponses[buttonText] || "Sorry, I didn't understand that.";
     sendMessage(responseMessage);
@@ -185,7 +177,7 @@ function Message() {
       try {
         const greeting = await fetchControlPanelSettings('qubit_devpandas');
         console.log("greeting data: ", greeting.data.settings.greeting_message);
-        const data = "Hey there! I’m your virtual assistant at LCN Capital Partners. How are you today?😊";
+        const data = "Hey there! I’m your virtual assistant at STREAM Capital Partners. How are you today?😊";
         const greetingMessage = {
           sender: "bot",
           text: data,
