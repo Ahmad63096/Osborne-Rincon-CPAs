@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import powerby from "./assets/images/footerlogo.png";
 import Svg, { Emoji } from "./Svg";
 import typing from "./assets/images/typing.gif";
-import { animateBotReply, fetchBotReply, fetchControlPanelSettings, splitMessage } from "./Function";
+import { animateBotReply, fetchBotReply, splitMessage } from "./Function";
 import EmojiPicker from "../../node_modules/emoji-picker-react"
 
 function Message() {
@@ -175,8 +175,6 @@ function Message() {
   useEffect(() => {
     const fetchGreetingMessage = async () => {
       try {
-        const greeting = await fetchControlPanelSettings('qubit_devpandas');
-        console.log("greeting data: ", greeting.data.settings.greeting_message);
         const data = "Hey there! I’m your virtual assistant at STREAM Capital Partners. How are you today?😊";
         const greetingMessage = {
           sender: "bot",
